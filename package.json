@@ -1,0 +1,35 @@
+{
+  "name": "playwright-automation-framework",
+  "version": "1.0.0",
+  "description": "End-to-End Playwright Automation Framework - POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=mobile-chrome",
+    "test:api": "playwright test tests/api/",
+    "test:ui-tests": "playwright test tests/ui/",
+    "test:visual": "playwright test tests/visual/",
+    "test:parallel": "playwright test --workers=4",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "trace": "playwright show-trace",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e"
+  ],
+  "author": "QA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0"
+  }
+}

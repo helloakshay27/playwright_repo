@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+*.png
+*.jpg
+*.jpeg
+
+# Test artifacts
+junit-results.xml
+test-results.json
+trace.zip
+
+# Authentication
+auth/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+
+# Build
+dist/
+build/
+
+# Temporary files
+*.tmp
+temp/
