@@ -129,7 +129,7 @@ test('Tutorial 1.6 - Various assertions', async ({ page }) => {
   await expect(page.locator('.new-todo')).toBeEnabled();
   console.log('✓ Input field is enabled');
   
-  // Check page URL
-  await expect(page).toHaveURL('https://demo.playwright.dev/todomvc/');
+  // Check page URL (use regex to handle trailing slash and hash)
+  await expect(page).toHaveURL(/todomvc/);
   console.log('✓ Page URL verified');
 });

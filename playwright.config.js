@@ -68,8 +68,6 @@ module.exports = defineConfig({
       name: 'chromium',
       use: { 
         ...devices['Desktop Chrome'],
-        // Save authentication state
-        storageState: 'auth/user.json'
       },
     },
 
@@ -77,7 +75,6 @@ module.exports = defineConfig({
       name: 'firefox',
       use: { 
         ...devices['Desktop Firefox'],
-        storageState: 'auth/user.json'
       },
     },
 
@@ -85,7 +82,6 @@ module.exports = defineConfig({
       name: 'webkit',
       use: { 
         ...devices['Desktop Safari'],
-        storageState: 'auth/user.json'
       },
     },
 
@@ -94,14 +90,12 @@ module.exports = defineConfig({
       name: 'mobile-chrome',
       use: { 
         ...devices['Pixel 5'],
-        storageState: 'auth/user.json'
       },
     },
     {
       name: 'mobile-safari',
       use: { 
         ...devices['iPhone 12'],
-        storageState: 'auth/user.json'
       },
     },
 
